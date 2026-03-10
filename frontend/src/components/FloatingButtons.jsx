@@ -34,9 +34,9 @@ const FloatingButtons = () => {
         <span>GET A FREE CONSULTATION</span>
       </button>
 
-      {/* WhatsApp Button */}
+      {/* WhatsApp Button - Bradley's Number */}
       <a
-        href="https://wa.me/447000000000?text=Hello%20Central%20Gate%20Estates%2C%20I%27m%20interested%20in%20your%20property%20management%20services."
+        href="https://wa.me/447726594925?text=Hello%20Central%20Gate%20Estates%2C%20I%27m%20interested%20in%20your%20property%20management%20services."
         target="_blank"
         rel="noopener noreferrer"
         data-testid="whatsapp-button"

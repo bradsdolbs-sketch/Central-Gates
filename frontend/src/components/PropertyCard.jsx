@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Bed, Calendar, Mail, Phone } from 'lucide-react';
 import { toast } from 'sonner';
@@ -69,9 +70,9 @@ const PropertyCard = ({ property, index }) => {
         className="property-card bg-[#111111] border border-[#333333] overflow-hidden group"
       >
         {/* Property Image */}
-        <div className="relative aspect-[4/3] overflow-hidden">
+        <Link to={`/properties/${property.id}`} className="block relative aspect-[4/3] overflow-hidden">
           <img
-            src={property.image_url}
+            src={property.image_url?.startsWith('/') ? `${BACKEND_URL}${property.image_url}` : property.image_url}
             alt={property.address}
             className="property-image w-full h-full object-cover"
           />
@@ -80,13 +81,15 @@ const PropertyCard = ({ property, index }) => {
               AVAILABLE
             </div>
           )}
-        </div>
+        </Link>
 
         {/* Property Details */}
         <div className="p-6">
-          <h3 className="font-['Playfair_Display'] text-xl text-[#F5F0EB] mb-3">
-            {property.address}
-          </h3>
+          <Link to={`/properties/${property.id}`}>
+            <h3 className="font-['Playfair_Display'] text-xl text-[#F5F0EB] mb-3 hover:text-white transition-colors">
+              {property.address}
+            </h3>
+          </Link>
           
           <div className="flex items-center gap-6 mb-4 text-[#A3A3A3]">
             <div className="flex items-center gap-2">
@@ -242,7 +245,7 @@ const PropertyCard = ({ property, index }) => {
               </div>
             </div>
             <a
-              href={`https://wa.me/447000000000?text=Hi,%20I'm%20interested%20in%20the%20property%20at%20${encodeURIComponent(property.address)}`}
+              href={`https://wa.me/447726594925?text=Hi,%20I'm%20interested%20in%20the%20property%20at%20${encodeURIComponent(property.address)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-3 text-sm tracking-[0.1em] font-medium hover:bg-[#128C7E] transition-all duration-300"
