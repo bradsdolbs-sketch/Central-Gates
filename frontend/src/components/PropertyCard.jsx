@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Bed, Calendar, Mail, Phone } from 'lucide-react';
 import { toast } from 'sonner';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
@@ -139,8 +139,10 @@ const PropertyCard = ({ property, index }) => {
             <DialogTitle className="font-['Playfair_Display'] text-2xl">
               Book a Viewing
             </DialogTitle>
+            <DialogDescription className="text-[#A3A3A3] text-sm">
+              {property.address}
+            </DialogDescription>
           </DialogHeader>
-          <p className="text-[#A3A3A3] text-sm mb-4">{property.address}</p>
           <form onSubmit={handleViewingSubmit} className="space-y-4">
             <div>
               <label className="block text-[#A3A3A3] text-xs tracking-[0.1em] mb-2">FULL NAME</label>
@@ -216,8 +218,10 @@ const PropertyCard = ({ property, index }) => {
             <DialogTitle className="font-['Playfair_Display'] text-2xl">
               Contact Us About This Property
             </DialogTitle>
+            <DialogDescription className="text-[#A3A3A3] text-sm">
+              {property.address}
+            </DialogDescription>
           </DialogHeader>
-          <p className="text-[#A3A3A3] text-sm mb-6">{property.address}</p>
           <div className="space-y-4">
             <div className="flex items-center gap-4 p-4 bg-[#0A0A0A] border border-[#333333]">
               <Mail className="w-5 h-5 stroke-1 text-[#F5F0EB]" />
