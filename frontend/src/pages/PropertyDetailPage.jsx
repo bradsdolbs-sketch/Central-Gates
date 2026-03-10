@@ -123,8 +123,8 @@ const PropertyDetailPage = () => {
   return (
     <>
       <Helmet>
-        <title>{property.address} | Central Gate Estates</title>
-        <meta name="description" content={`${property.bedrooms} bedroom property in ${property.address} - £${property.rent_per_month}/month. ${property.description?.slice(0, 150)}`} />
+        <title>{`${property.address} | Central Gate Estates`}</title>
+        <meta name="description" content={`${property.bedrooms} bedroom property in ${property.address} - £${property.rent_per_month}/month. ${property.description ? property.description.slice(0, 150) : ''}`} />
       </Helmet>
 
       <main data-testid="property-detail-page" className="min-h-screen bg-[#0A0A0A] pt-20">
