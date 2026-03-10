@@ -1,0 +1,116 @@
+{
+  "project_name": "Central Gate Estates",
+  "design_philosophy": {
+    "theme": "Monochrome Luxury",
+    "core_values": ["Trust", "Elegance", "Transparency", "Professionalism"],
+    "emotional_tone": "Serious, Competent, High-End, Quiet Luxury",
+    "visual_style": "Strict Dark Mode, High Contrast Typography, Generous Spacing"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Inter, sans-serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-tight",
+      "h2": "text-4xl md:text-5xl font-medium tracking-tight mb-8",
+      "h3": "text-2xl md:text-3xl font-medium mb-4",
+      "body_lg": "text-lg md:text-xl font-light leading-relaxed",
+      "body": "text-base font-light leading-relaxed text-gray-300",
+      "caption": "text-sm tracking-widest uppercase text-gray-400"
+    }
+  },
+  "colors": {
+    "palette": {
+      "background": "#0A0A0A",
+      "surface": "#111111",
+      "surface_hover": "#1A1A1A",
+      "text_primary": "#F5F0EB",
+      "text_secondary": "#A3A3A3",
+      "accent": "#FFFFFF",
+      "border": "#333333",
+      "error": "#7f1d1d",
+      "success": "#14532d"
+    },
+    "usage": {
+      "body_bg": "bg-[#0A0A0A]",
+      "card_bg": "bg-[#111111]",
+      "text_main": "text-[#F5F0EB]",
+      "text_muted": "text-[#A3A3A3]",
+      "border_subtle": "border-[#333333]",
+      "button_primary_bg": "bg-[#F5F0EB]",
+      "button_primary_text": "text-[#0A0A0A]",
+      "button_secondary_border": "border-[#FFFFFF]",
+      "button_secondary_text": "text-[#FFFFFF]"
+    }
+  },
+  "components": {
+    "navbar": {
+      "style": "fixed top-0 w-full z-50 bg-[#0A0A0A] border-b border-[#333333]",
+      "height": "h-20",
+      "link_style": "text-[#F5F0EB] hover:text-[#FFFFFF] text-sm tracking-widest uppercase transition-colors"
+    },
+    "buttons": {
+      "primary": "bg-[#F5F0EB] text-[#0A0A0A] hover:bg-white px-8 py-4 rounded-none text-sm tracking-widest uppercase font-medium transition-all duration-300",
+      "secondary": "bg-transparent border border-[#FFFFFF] text-[#FFFFFF] hover:bg-[#FFFFFF] hover:text-[#0A0A0A] px-8 py-4 rounded-none text-sm tracking-widest uppercase font-medium transition-all duration-300",
+      "cta_sticky": "fixed bottom-8 right-24 z-40 shadow-2xl animate-in slide-in-from-bottom-4"
+    },
+    "cards": {
+      "base": "bg-[#111111] border border-[#333333] p-8 md:p-12 hover:border-[#555555] transition-colors duration-300 rounded-none",
+      "service": "flex flex-col items-start h-full",
+      "property": "group overflow-hidden bg-[#111111] border border-[#333333]"
+    },
+    "inputs": {
+      "base": "bg-[#0A0A0A] border border-[#333333] text-[#F5F0EB] placeholder:text-[#555555] rounded-none focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] px-4 py-3"
+    }
+  },
+  "layout": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "spacing": {
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8"
+    },
+    "grid": {
+      "services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "listings": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    }
+  },
+  "assets": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_landlord-portal-17/artifacts/g2hvvylh_Logo.png",
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1633694705199-bc1e0a87c97a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBsdXh1cnklMjBsb25kb24lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzMxMDE0ODN8MA&ixlib=rb-4.1.0&q=85",
+      "founder": "https://images.unsplash.com/photo-1758518727888-ffa196002e59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0JTIwYnVzaW5lc3N8ZW58MHx8fHwxNzczMTAxNDk0fDA&ixlib=rb-4.1.0&q=85",
+      "handshake": "https://images.unsplash.com/photo-1676147376197-203c810944a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMGhhbmRzaGFrZSUyMGNsb3NlJTIwdXAlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzMxMDE0OTR8MA&ixlib=rb-4.1.0&q=85",
+      "properties": [
+        "https://images.unsplash.com/photo-1632743441209-8a09b8a37e25?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsdXh1cnklMjBsb25kb24lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzMxMDE0ODN8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1595846723416-99a641e1231a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsdXh1cnklMjBsb25kb24lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzMxMDE0ODN8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.pexels.com/photos/18435276/pexels-photo-18435276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/3754595/pexels-photo-3754595.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.unsplash.com/photo-1650533966999-c07a71fd9146?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBsdXh1cnklMjBsb25kb24lMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzMxMDE0ODN8MA&ixlib=rb-4.1.0&q=85"
+      ]
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-1 w-6 h-6 text-[#F5F0EB]"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL FONTS: Ensure Playfair Display and Inter are imported via Google Fonts in index.css.",
+    "STRICT DARK MODE: Do not implement a light mode toggle. Force dark mode classes.",
+    "NAVIGATION: Create a 'sticky' nav that is pure black (#0A0A0A) with a subtle bottom border (#333333).",
+    "HERO SECTION: Use the 'hero_bg' image with a heavy black gradient overlay (bg-gradient-to-r from-black via-black/80 to-transparent) so text on the left is perfectly readable.",
+    "CARDS: Use square corners (rounded-none) for a sharper, more premium look.",
+    "FORMS: Use Shadcn Form components but override styles to match the 'inputs' design guideline above.",
+    "PROPERTY LISTINGS: Display a grid of 3-4 properties using the provided property images. Include 'Beds', 'Price', 'Available Date'.",
+    "FOOTER: A massive footer with 'Let's Talk' in large serif font. Pure black background.",
+    "ANIMATION: Use framer-motion for simple 'fade-in-up' effects on all sections as they scroll into view.",
+    "WHATSAPP: Add a fixed floating action button for WhatsApp in the bottom right."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Do not use gradients for backgrounds, only for overlays.",
+    "Ensure all text has sufficient contrast (at least 4.5:1).",
+    "Use 2x more padding than usual.",
+    "All interactive elements must have data-testid attributes.",
+    "Use lucide-react icons with stroke-width=1 for that 'ultra-thin' luxury look."
+  ]
+}
